@@ -22,9 +22,6 @@ router.beforeEach((to, from, next) => {
     } else {
       next({
         name: "Login",
-        query: {
-          redirect: to.meta.redirect,
-        },
       });
     }
   } else {
