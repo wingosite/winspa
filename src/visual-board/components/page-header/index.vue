@@ -40,14 +40,6 @@
         </template>
       </t-head-menu>
     </t-layout>
-    <!-- <t-dialog
-      v-model:visible="visible"
-      header="确定要退出吗？"
-      body="确定退出后，内容将被清空且返回至登录页，请谨慎操作！"
-      attach="body"
-      confirmOnEnter
-      :on-confirm="onConfirm"
-    /> -->
   </div>
 </template>
 
@@ -56,8 +48,6 @@ import router from "@/router";
 import { auth } from "@/utils";
 import { DialogPlugin } from "tdesign-vue-next";
 import { ref } from "vue";
-
-const visible = ref(false);
 
 const dropdownOptions = ref([
   {

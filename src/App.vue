@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { merge } from "lodash";
+import { merge } from "loadash";
 import enConfig from "tdesign-vue-next/es/locale/zh_CN";
 
 const globalConfig = merge(enConfig, {
