@@ -11,9 +11,13 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@types/crypto-js": "4.1.1",
     "@types/js-cookie": "3.0.3",
+    "@types/js-md5": "0.7.0",
     "@types/nprogress": "0.2.0",
+    "crypto-js": "4.1.1",
     "js-cookie": "3.0.1",
+    "js-md5": "0.7.3",
     "loadash": "1.0.0",
     "lodash": "4.17.21",
     "nprogress": "0.2.0",

@@ -12,7 +12,9 @@ const globalConfig = merge(enConfig, {
 <template>
   <t-config-provider :global-config="globalConfig">
     <RouterView #="{ Component, route }">
-      <component :is="Component" :key="route.path" />
+      <transition name="fade">
+        <component :is="Component" :key="route.path" />
+      </transition>
     </RouterView>
   </t-config-provider>
 </template>
