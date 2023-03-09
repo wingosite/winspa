@@ -18,3 +18,7 @@ export const setToken = (token: string) => {
 export const getToken = () => {
   return Cookie.get(TOKEN);
 };
+
+export const clearToken = () => {
+  return Cookie.remove(TOKEN);
+};
