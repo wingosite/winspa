@@ -1,5 +1,5 @@
 <template>
-  <div class="page-header">
+  <header class="page-header">
     <t-layout>
       <t-head-menu theme="light" height="90px">
         <template #logo>
@@ -40,7 +40,7 @@
         </template>
       </t-head-menu>
     </t-layout>
-  </div>
+  </header>
 </template>
 
 <script setup lang="ts">

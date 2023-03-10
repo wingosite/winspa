@@ -25,6 +25,7 @@
     "pinia": "^2.0.28",
     "pixi.js": "7.1.4",
     "sass": "^1.58.3",
+    "tdesign-icons-vue-next": "0.1.8",
     "tdesign-mobile-vue": "0.14.1",
     "tdesign-vue-next": "1.0.5",
     "vue": "^3.2.45",
