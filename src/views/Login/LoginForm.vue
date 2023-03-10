@@ -20,7 +20,6 @@
         />
       </div>
 
-      <!-- <button class="button" @click.prevent.stop="onLogin()">登录</button> -->
       <t-button
         theme="primary"
         :loading="loading"
