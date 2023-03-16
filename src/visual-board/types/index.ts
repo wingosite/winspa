@@ -11,6 +11,7 @@ export interface PageConfig {
 
 export interface NewPageReturnType extends NewPageProps {
   config: PageConfig;
+  blocks: string[];
 }
 
 export interface PageValueProps {

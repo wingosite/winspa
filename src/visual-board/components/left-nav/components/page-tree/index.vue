@@ -9,42 +9,29 @@
     >
       <template #icon><add-icon /></template>添加页面
     </t-button>
-    <t-tree style="margin-top: 20px" :data="mockPages" activable expand-all />
+    <t-tree style="margin-top: 20px" :data="pages" activable expand-all />
   </div>
 </template>
 
 <script lang="ts" setup>
+import { useVisualData } from "@/visual-board/hooks/useVisualData";
 import { AddIcon } from "tdesign-icons-vue-next";
-import { reactive } from "vue";
+import { computed } from "vue";
 
-// 使用自定义hooks - useVisualBoardData
-// const { text } = useVisualBoardData();
-
-const mockPages = reactive([
-  {
-    title: "首页",
-    path: "/",
-    label: "首页(/)",
-  },
-  {
-    title: "个人中心",
-    path: "/user",
-    label: "个人中心(/user)",
-  },
-]);
+const { incrementPage, pageData } = useVisualData();
 
 const createNewPage = () => {
   console.log("创建新的页面");
-  // console.log(text);
-  // console.log(jsonData, "pages");
 };
 
-// const pages = computed(() =>
-//   Object.keys(jsonData.pages).map((key) => ({
-//     title: jsonData.pages[key].title,
-//     path: key,
-//   }))
-// );
+const pages = computed(
+  () =>
+    pageData &&
+    Object.keys(pageData.pages).map((key) => ({
+      label: `${pageData.pages[key].title}(${key})`,
+      path: key,
+    }))
+);
 </script>
 
 <style scoped lang="scss">
