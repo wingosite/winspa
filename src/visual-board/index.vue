@@ -6,7 +6,9 @@
         <left-nav />
       </t-aside>
       <t-layout class="layout-main">
-        <t-content class="layout-content">123</t-content>
+        <t-content class="layout-content">
+          <div class="container"></div>
+        </t-content>
         <t-aside class="layout-right"><RightAttributePanel /></t-aside>
       </t-layout>
     </t-layout>
@@ -33,6 +35,19 @@ import {
   }
   @at-root #{&}-right {
     width: 30%;
+  }
+  @at-root #{&}-content {
+    position: relative;
+    .container {
+      position: absolute;
+      width: 375px;
+      height: 667px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #e1e1e1;
+      background-color: #ffffff;
+    }
   }
 }
 </style>

@@ -16,6 +16,7 @@
     "@types/js-cookie": "3.0.3",
     "@types/js-md5": "0.7.0",
     "@types/nprogress": "0.2.0",
+    "@vueuse/core": "9.13.0",
     "crypto-js": "4.1.1",
     "js-cookie": "3.0.1",
     "js-md5": "0.7.3",
@@ -29,7 +30,8 @@
     "tdesign-mobile-vue": "0.14.1",
     "tdesign-vue-next": "1.0.5",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vuedraggable": "2.24.3"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
